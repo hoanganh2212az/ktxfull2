@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import authService from "../service/authService";
+import authService from "../service/authService"; // ✅ import service
 import "../style/Login.css";
 
 export default function Login() {
@@ -18,13 +18,13 @@ export default function Login() {
         // Điều hướng theo role
         switch (role) {
           case "1":
-            navigate("/reports"); // Admin redirects to reports page
+            navigate("/danhsachdondky");
             break;
           case "4":
-            navigate("/thedinhdanh"); // Student redirects to ID card page
+            navigate("/thedinhdanh");
             break;
           case "3":
-            navigate("/shiftmanage"); // Staff redirects to shift management
+            navigate("/shiftmanage");
             break;
           default:
             alert("Không xác định được vai trò người dùng.");

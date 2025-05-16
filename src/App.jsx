@@ -30,8 +30,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/thedinhdanh" replace />} />
-        
+        <Route path="/" element={<Navigate to="/dangnhap" replace />} />
+
         {/* Dũng */}
         <Route path="/dangnhap" element={<Login />} />
         <Route path="/quenmatkhau" element={<ForgotPassword />} />
@@ -45,7 +45,10 @@ function App() {
         <Route path="/thongtinhopdong" element={<InforContract />} />
         <Route path="/thongtinhopdong/:id" element={<InforContract />} />
         <Route path="/giahanhopdong" element={<ContractRenewalApp />} />
-        <Route path="/giahanhopdong/:contractId" element={<ContractRenewalApp />} />
+        <Route
+          path="/giahanhopdong/:contractId"
+          element={<ContractRenewalApp />}
+        />
         <Route path="/huyhopdong" element={<CancelContract />} />
         <Route path="/huyhopdong/:id" element={<CancelContract />} />
 

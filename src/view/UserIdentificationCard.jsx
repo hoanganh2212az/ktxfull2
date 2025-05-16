@@ -1,10 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 
 const UserIdentificationCard = () => {
-  const navigate = useNavigate();
-
   return (
     <div style={{ display: "flex", height: "120vh" }}>
       {/* Sidebar */}
@@ -58,21 +55,6 @@ const UserIdentificationCard = () => {
                 </i>
               </div>
               <p style={{ paddingTop: "10px" }}>Có giá trị đến: 30/4/2025</p>
-              <button 
-                onClick={() => navigate('/giahanhopdong/1')} 
-                style={{
-                  backgroundColor: "#a40000",
-                  color: "white",
-                  border: "none",
-                  padding: "8px 16px",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                  marginTop: "10px",
-                  width: "100%"
-                }}
-              >
-                Gia hạn hợp đồng
-              </button>
             </div>
 
             {/* User Info */}
